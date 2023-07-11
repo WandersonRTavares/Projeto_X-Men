@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Oxanium:wght@300;400;700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/estilos.css">
     <link rel="stylesheet" href="./src/css/responsivo.css">
 </head>
 
@@ -23,139 +23,67 @@
     <main class="selecao-de-personagens">
 
         <section class="personagens">
-            <h1 class="titulo"> Selecione um personagem
+            <h1 class="titulo"> Selecione um personagem</h1>
 
-            </h1>
             <ul class="lista-de-personagens">
 
-                <li class="personagem-selecionado" id="ciclope">
-                    <img src="./src/img/card-ciclope.jpg" alt="Personagem Ciclope" />
+                <li class="personagem selecionado" id="ciclope" data-name="Ciclope"
+                    data-description="Um acidente aconteceu com ele quando criança, agora Ciclope é um mutante, possuindo o poder de projetar pura energia de seus olhos de cor vermelho-rubi, consegue manter seus poderes controlados por meio de um oculos especial.">
+                    <img src="./src/imagens/card-ciclope.jpg" alt="Personagem Ciclope" />
                 </li>
 
-                <li class="personagem" id="jean-grey">
-                    <img src="./src/img/card-jean-grey.jpg" alt="Personagem Jean Grey" />
+                <li class="personagem" id="jean-grey" data-name="Jean Grey"
+                    data-description="Jean Grey é uma mutante nível ômega e o
+                principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia, telecinese e empatia de Jean são drasticamente aumentadas quando em contato com a Fênix, além de poder viajar no vácuo do espaço que vai além da velocidade da luz">
+                    <img src="./src/imagens/card-jean-grey.jpg" alt="Personagem Jean Grey" />
                 </li>
 
-                <li class="personagem" id="lince negra">
-                    <img src="./src/img/card-lince-negra.jpg" alt="Personagem Lince Negra" />
+                <li class="personagem" id="lince-negra" data-name="Lince Negra"
+                    data-description="Ela tem o poder de atravessar matéria sólida,campos de energia,rajadas ópticas, continuando intacta,e também tem o poder de andar no ar">
+                    <img src="./src/imagens/card-lince-negra.jpg" alt="Personagem Lince Negra" />
                 </li>
 
-                <li class="personagem" id="magneto">
-                    <img src="./src/img/card-magneto.jpg" alt="Personagem Magneto" />
+                <li class="personagem" id="tempestade" data-name="Tempestade"
+                    data-description="Tem o poder de controlar as forças da natureza, muito poderosa ela pode produzir raios, chuvas, gelos, ventos, neblina, entre outros efeitos">
+                    <img src="./src/imagens/card-tempestade.jpg" alt="Personagem Tempestade" />
                 </li>
 
-                <li class="personagem" id="noturno">
-                    <img src="./src/img/card-noturno.jpg" alt="Personagem Noturno" />
+                <li class="personagem" id="vampira" data-name="Vampira"
+                    data-description="Ela tem o poder de absorver a vitalidade e memória das pessoas que toca ou no caso dos mutantes os poderes e a memória, mas só temporariamente">
+                    <img src="./src/imagens/card-vampira.jpg" alt="Personagem Vampira" />
                 </li>
 
-                <li class="personagem" id="tempestade">
-                    <img src="./src/img/card-tempestade.jpg" alt="Personagem Tempestade" />
+                <li class="personagem" id="wolverine" data-name="Wolverine"
+                    data-description="Poderes. Garras Metálicas. Fator de Cura Regenerativo, Super Agilidade. Poderes e habilidades: Além de suas mortais garras de adamantium, capazes de cortar qualquer coisa, ele tem um poderoso fato de cura; envelhece        lentamente – o que o torna praticamente imortal e tem diversas características animais, como sentidos muito aguçados">
+                    <img src="./src/imagens/card-wolverine.jpg" alt="Personagem Wolverine" />
                 </li>
 
-                <li class="personagem" id="vampira">
-                    <img src="./src/img/card-vampira.jpg" alt="Personagem Vampira" />
+                <li class="personagem" id="noturno" data-name="Noturno"
+                    data-description="Seus poderes mutantes incluem teletransporte,
+                  super agilidade, aderência física, visão noturna, habilidades acrobáticas e a habilidade de fundir-se com as sombras. Noturno é um mutante com a habilidade para teleportar a si mesmo, roupas usadas e uma certa quantia de massa adicional com qual entra em contato.">
+                    <img src="./src/imagens/card-noturno.jpg" alt="Personagem Noturno" />
                 </li>
 
-                <li class="personagem" id="wolverine">
-                    <img src="./src/img/card-wolverine.jpg" alt="Personagem Wolverine" />
+                <li class="personagem" id="magneto" data-name="Magneto"
+                    data-description="Magneto foi recentemente reclassificado como
+                  um mutante de nível ômega, seus poderes são incrivelmente vastos. Ele pode controlar e manipular campos magnéticos que vão muito além da habilidade de controlar metal">
+                    <img src="./src/imagens/card-magneto.jpg" alt="Personagem Magneto" />
                 </li>
 
             </ul>
         </section>
 
         <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-ciclope.png" alt="Personagem Selecionado">
+            <img class="personagem-grande" src="./src/imagens/card-ciclope.png" alt="Personagem Selecionado" />
 
             <div class="informacoes-personagem">
                 <h2 class="nome-personagem" id="nome-personagem">Ciclope</h2>
+
                 <p class="descricao-personagem" id="descricao-personagem"> Um acidente aconteceu com ele quando criança,
                     agora Ciclope é um mutante, possuindo o poder de projetar pura energia de seus olhos de cor
                     vermelho-rubi, consegue manter seus poderes controlados por meio de um oculos especial. </p>
             </div>
         </section>
-
-        <!-- <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-jean-grey.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Jean Grey</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Jean Grey é uma mutante nível ômega e o
-                    principal avatar da Força Fênix, no qual manifesta poderes cósmicos. A telepatia, telecinese e
-                    empatia de Jean são drasticamente aumentadas quando em contato com a Fênix, além de poder viajar no
-                    vácuo do espaço que vai além da velocidade da luz </p>
-            </div>
-        </section>
-
-        <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-lince-negra.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Lince Negra</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Lince Negra é o codinome de Kitty Pryde. Ela
-                    tem o poder de Intangibilidade. Atravessar qualquer coisa. </p>
-            </div>
-        </section>
-
-        <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-magneto.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Magneto</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Magneto foi recentemente reclassificado como
-                    um mutante de nível ômega, seus poderes são incrivelmente vastos. Ele pode controlar e manipular
-                    campos magnéticos que vão muito além da habilidade de controlar metal </p>
-            </div>
-        </section>
-
-        <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-noturno.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Noturno</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Seus poderes mutantes incluem teletransporte,
-                    super agilidade, aderência física, visão noturna, habilidades acrobáticas e a habilidade de
-                    fundir-se com as sombras. Noturno é um mutante com a habilidade para teleportar a si mesmo, roupas
-                    usadas e uma certa quantia de massa adicional com qual entra em contato. </p>
-            </div>
-        </section>
-
-        <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-tempestade.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Tempestade</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Ela é capaz de manipular o tempo, e alterar o
-                    clima, assim tendo influência sobre os elementos da natureza. Pode alterar a pressão atmosférica a
-                    Temperatura e Umidade. É capaz de controlar os elementos climáticos, criar chuvas, tempestades,
-                    trovões, relâmpagos, raios, tornados, neve, neblina, etc.</p>
-            </div>
-        </section>
-
-        <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-vampira.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Vampira</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Vampira é integrante (e as vezes líder) de
-                    algumas equipes dos X-Men e dos Vingadores. Sua primeira aparição foi em The Avengers Annual número
-                    10 de 1981, e seu poder mutante é a habilidade de absorver a vitalidade, memórias, habilidades e
-                    poderes de outros seres vivos através do contato com a pele.</p>
-            </div>
-        </section>
-
-        <section class="personagem-selecionado">
-            <img class="personagem-grande" src="./src/img/card-wolverine.png" alt="Personagem Selecionado">
-
-            <div class="informacoes-personagem">
-                <h2 class="nome-personagem" id="nome-personagem">Wolverine</h2>
-                <p class="descricao-personagem" id="descricao-personagem"> Poderes e habilidades: Além de suas mortais
-                    garras de adamantium, capazes de cortar qualquer coisa, ele tem um poderoso fato de cura; envelhece
-                    lentamente – o que o torna praticamente imortal e tem diversas características animais, como
-                    sentidos muito aguçados</p>
-            </div>
-        </section> -->
-
-
 
     </main>
     <script src="./src/js/index.js"></script>
